@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Guitar Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+</head>
+<body>
+
+{#<img src="{% static "images/djangoGuitar.jpg" %}" alt="">#}
+{#<h1>Here are your access records:</h1>#}
+{#<div class="djangtwo" >#}
+{#    {% if access_records %}#}
+{#        <table>#}
+{#            <thead>#}
+{#            <th>Site Name</th>#}
+{#            <th>Date Accessed</th>#}
+{#            </thead>#}
+{#            {% for acc in access_records %}#}
+{#                <tr>#}
+{#                    <td>{{ acc.name }}</td>#}
+{#                <td>{{ acc.date }}</td>#}
+{#                </tr>#}
+{#            {% endfor %}#}
+{#        </table>#}
+{#    {%  else %}#}
+{#        <p> No records found </p>#}
+{#    {% endif %}#}
+{#</div>#}
+<div class="container">
+     <div class="jumbotron">
+        <h1>Hi, this is the picture of Django !</h1>
+     </div>
+
+</div>
+<div>
+    <a href="/formpage">Form Page</a>
+</div>
+
+</body>
+</html>

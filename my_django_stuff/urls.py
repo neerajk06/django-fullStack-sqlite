@@ -20,6 +20,9 @@ from first_project import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('first_project/', include('first_project.urls')),
+    path('first_project/', include(('first_project.urls', 'first_project'), namespace='first_project')),
     path('admin/', admin.site.urls),
+    path('formpage/', views.form_name_view, name='form_name'),
+    path('users/', views.users_view, name='users'),
+
 ]
